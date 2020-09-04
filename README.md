@@ -1,2 +1,3 @@
-# 0820CDMISCM01BRED
-Turma iOS TN01
+# Github com os Exemplos em aula
+
+## Turma: 0820CDMISCM01BRED iOS TN01

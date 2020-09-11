@@ -42,10 +42,14 @@ public class Carro {
 
     func setModelo(modelo: String) {
         if modelo == "chevrolet" {
-            self.modelo = "GM-CHEVROLET"
+            setChevrolet()
         } else {
             self.modelo = modelo
         }
+    }
+    
+    private func setChevrolet() {
+        self.modelo = "GM-CHEVROLET"
     }
 }
 
@@ -80,3 +84,7 @@ onix.setAno(ano: 2020)
 
 // onix.cor
 
+
+let numero = 7.0/2.0 // 3.5
+print(Int(numero)) // 3
+let numeroInt = 7/2

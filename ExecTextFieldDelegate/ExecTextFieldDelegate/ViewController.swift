@@ -8,9 +8,19 @@
 
 import UIKit
 
+class User {
+    
+}
+
+class UserManager {
+    var array = [User]()
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldNome: UITextField!
     @IBOutlet weak var textFieldCargo: UITextField!
+    var user: User?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +29,9 @@ class ViewController: UIViewController {
     }
     
     private func validaInformacoes() -> Bool {
+        if let nome = textFieldNome.text, !nome.isEmpty {
+            print(nome) // nao é vazio nem nil
+        }
         if textFieldNome.text == nil || textFieldNome.text!.isEmpty {
             print("Falta o nome")
             

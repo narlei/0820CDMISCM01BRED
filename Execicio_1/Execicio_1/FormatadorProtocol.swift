@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FormatadorProtocol {
+@objc protocol FormatadorProtocol {
     func getFormatatado() -> String
     func getFormatadoParaUsuario() -> String
 }

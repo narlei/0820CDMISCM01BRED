@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet var labelName: MyLabel?
     @IBOutlet var buttonConfirm: UIButton?
     @IBOutlet weak var searchBarlala: UISearchBar?
+    
+    @IBOutlet var labelNovo: UILabel?
 
     override func viewDidLoad() {
         super.viewDidLoad()

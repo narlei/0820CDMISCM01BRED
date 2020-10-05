@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLH-4E-RAQ">
-                                                    <rect key="frame" x="16" y="54" width="41.5" height="21"/>
+                                                    <rect key="frame" x="8" y="54" width="41.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="XLH-4E-RAQ" firstAttribute="top" secondItem="WK8-Li-tmM" secondAttribute="top" constant="54" id="OCf-97-EEk"/>
-                                                <constraint firstItem="XLH-4E-RAQ" firstAttribute="leading" secondItem="WK8-Li-tmM" secondAttribute="leading" constant="16" id="t2X-2h-mY7"/>
+                                                <constraint firstItem="XLH-4E-RAQ" firstAttribute="leading" secondItem="WK8-Li-tmM" secondAttribute="leading" constant="8" id="t2X-2h-mY7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemGrayColor"/>

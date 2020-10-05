@@ -20,7 +20,6 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UICollectionViewDelegate {
-
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -39,9 +38,8 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let viewSize = view.frame.size.width
-        
+
         return CGSize(width: (viewSize / 3) - 10, height: 400)
     }
 }

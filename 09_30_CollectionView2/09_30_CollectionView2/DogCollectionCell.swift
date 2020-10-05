@@ -8,14 +8,9 @@
 import UIKit
 
 class DogCollectionCell: UICollectionViewCell {
-    
-    
-    @IBOutlet weak var labelName: UILabel!
-    
-    
+    @IBOutlet var labelName: UILabel!
+
     func setup(name: String) {
         labelName.text = name
     }
-    
-    
 }

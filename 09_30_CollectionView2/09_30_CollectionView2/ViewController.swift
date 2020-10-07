@@ -28,6 +28,7 @@ extension ViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DogCollectionCell", for: indexPath) as! DogCollectionCell
 
         cell.setup(name: arrayDogs[indexPath.row])

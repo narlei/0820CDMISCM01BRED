@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     // MARK: Action
     @IBAction func changedSegmentedControlFilter(_ sender: Any) {
         loadData()
+        
+        
     }
     
     private func loadData() {
@@ -35,6 +37,16 @@ class ViewController: UIViewController {
         } else {
             loadDeveloper()
         }
+    }
+    
+    private func loadDataFromApi() {
+        let array = Global.shared.arrayItems
+        
+        arrayItems = array
+    }
+    
+    func saveNameLocal() {
+        Global.shared.name = "Teste"
     }
     
     private func loadPerson() {

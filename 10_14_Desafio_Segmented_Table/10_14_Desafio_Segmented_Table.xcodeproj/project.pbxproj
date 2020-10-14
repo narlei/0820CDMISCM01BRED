@@ -22,6 +22,7 @@
 		9C0F90BB2537268C00E97CD6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F90BA2537268C00E97CD6 /* PersonCell.swift */; };
 		9C0F90C125372BF300E97CD6 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F90C025372BF300E97CD6 /* PersonDetailViewController.swift */; };
 		9C0F90C725372C0000E97CD6 /* PersonDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0F90C625372C0000E97CD6 /* PersonDetail.storyboard */; };
+		9C0F90CB2537354E00E97CD6 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F90CA2537354E00E97CD6 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9C0F90BA2537268C00E97CD6 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		9C0F90C025372BF300E97CD6 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		9C0F90C625372C0000E97CD6 /* PersonDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonDetail.storyboard; sourceTree = "<group>"; };
+		9C0F90CA2537354E00E97CD6 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				9C0F90AB253720A700E97CD6 /* sample.json */,
 				9C0F909D25371C7000E97CD6 /* Screen Shot 2020-10-14 at 08.44.50.png */,
 				9C0F908425371B6B00E97CD6 /* Info.plist */,
+				9C0F90CA2537354E00E97CD6 /* Global.swift */,
 			);
 			path = 10_14_Desafio_Segmented_Table;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0F90CB2537354E00E97CD6 /* Global.swift in Sources */,
 				9C0F90BB2537268C00E97CD6 /* PersonCell.swift in Sources */,
 				9C0F907B25371B6800E97CD6 /* ViewController.swift in Sources */,
 				9C0F90B72537239500E97CD6 /* Developer.swift in Sources */,

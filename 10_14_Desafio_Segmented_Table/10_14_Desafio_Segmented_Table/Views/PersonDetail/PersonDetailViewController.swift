@@ -8,11 +8,12 @@
 import UIKit
 
 class PersonDetailViewController: UIViewController {
+    
+    var arrayItems = [Person]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     static func getController() -> PersonDetailViewController? {

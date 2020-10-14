@@ -1,0 +1,7 @@
+{
+    "api_key": "valor",
+    "outraChave": "valor",
+    "inteiro": 1123,
+    "boleano": true,
+    "CFBundleDevelopmentRegion": "$(DEVELOPMENT_LANGUAGE)"
+}

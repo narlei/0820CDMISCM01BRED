@@ -116,7 +116,9 @@ extension ViewController: UITableViewDelegate {
         let city = arrayCitiesFiltered[indexPath.row]
         if let viewDetail: CityDetailViewController = CityDetailViewController.getModule() {
             viewDetail.city = city
-            present(viewDetail, animated: true, completion: nil)
+            present(viewDetail, animated: true) {
+                print("Complete")
+            }
         }
     }
 }

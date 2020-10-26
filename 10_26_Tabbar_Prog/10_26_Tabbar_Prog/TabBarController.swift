@@ -41,6 +41,9 @@ class TabBarController: UITabBarController {
         
         
         viewControllers = arrayViews
+        
+        
+        self.selectedIndex = 1
     }
 }
 

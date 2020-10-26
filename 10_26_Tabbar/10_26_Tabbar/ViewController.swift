@@ -11,7 +11,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+    }
+    
+    func open() {
+        UIApplication.shared.open(URL(string: "https://google.com")!)
+        
+        
+        UIApplication.shared.open(URL(string: "mailto://email@com.br")!)
+
+        // Call phone scheme url swift
+        
+        
+        
+        
     }
 
 

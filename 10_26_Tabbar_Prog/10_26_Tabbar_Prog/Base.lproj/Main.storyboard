@@ -25,6 +25,14 @@
                                     <action selector="actionChangeMain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oo9-pX-6K9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7b-NN-HjI">
+                                <rect key="frame" x="122" y="214" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open URL"/>
+                                <connections>
+                                    <action selector="actionOpenLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOG-Er-1Cm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

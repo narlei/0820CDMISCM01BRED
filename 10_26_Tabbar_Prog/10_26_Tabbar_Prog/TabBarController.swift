@@ -19,15 +19,16 @@ class TabBarController: UITabBarController {
     func loadViewControllers() {
         var arrayViews = [UIViewController]()
 
-        
         /// DAQUI
+        
+        // instanciar as telas com storyboard desta maneira
         if let viewController1 = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? ViewController {
             viewController1.view.backgroundColor = .red
             viewController1.tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 0)
-            
             arrayViews.append(viewController1)
         }
 
+        // não usar assim
         let viewController2 = UIViewController()
         viewController2.view.backgroundColor = .green
         viewController2.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
@@ -36,14 +37,15 @@ class TabBarController: UITabBarController {
         let viewController3 = UIViewController()
         viewController3.view.backgroundColor = .blue
         viewController3.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
-        arrayViews.append(viewController3)
+        viewController3.title = "TITLE"
+        let navigation = UINavigationController(rootViewController: viewController3)
+        
+        arrayViews.append(navigation)
         /// AQUI
-        
-        
+
         viewControllers = arrayViews
-        
-        
-        self.selectedIndex = 1
+
+        self.selectedIndex = 2
     }
 }
 

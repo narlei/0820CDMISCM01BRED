@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C844EDA2549A1DA00A82E7C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C844ED92549A1DA00A82E7C /* Contact.swift */; };
 		9CAFB7DF2546FCFA00C4B620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFB7DE2546FCFA00C4B620 /* AppDelegate.swift */; };
 		9CAFB7E12546FCFA00C4B620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFB7E02546FCFA00C4B620 /* SceneDelegate.swift */; };
 		9CAFB7E32546FCFA00C4B620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAFB7E22546FCFA00C4B620 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C844ED92549A1DA00A82E7C /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		9CAFB7DB2546FCFA00C4B620 /* 10_26_Tabbar_Prog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 10_26_Tabbar_Prog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAFB7DE2546FCFA00C4B620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CAFB7E02546FCFA00C4B620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +62,13 @@
 			children = (
 				9CAFB7DE2546FCFA00C4B620 /* AppDelegate.swift */,
 				9CAFB7E02546FCFA00C4B620 /* SceneDelegate.swift */,
+				9CAFB7F32546FD4700C4B620 /* TabBarController.swift */,
 				9CAFB7E22546FCFA00C4B620 /* ViewController.swift */,
+				9C844ED92549A1DA00A82E7C /* Contact.swift */,
 				9CAFB7E42546FCFA00C4B620 /* Main.storyboard */,
 				9CAFB7E72546FCFC00C4B620 /* Assets.xcassets */,
 				9CAFB7E92546FCFC00C4B620 /* LaunchScreen.storyboard */,
 				9CAFB7EC2546FCFC00C4B620 /* Info.plist */,
-				9CAFB7F32546FD4700C4B620 /* TabBarController.swift */,
 			);
 			path = 10_26_Tabbar_Prog;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				9CAFB7E32546FCFA00C4B620 /* ViewController.swift in Sources */,
 				9CAFB7F42546FD4700C4B620 /* TabBarController.swift in Sources */,
+				9C844EDA2549A1DA00A82E7C /* Contact.swift in Sources */,
 				9CAFB7DF2546FCFA00C4B620 /* AppDelegate.swift in Sources */,
 				9CAFB7E12546FCFA00C4B620 /* SceneDelegate.swift in Sources */,
 			);

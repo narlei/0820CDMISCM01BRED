@@ -11,15 +11,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // DAQUI
         // Instancia a Window da application
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
         window = UIWindow(windowScene: windowScene)
 
         // Seta a rootview, a primeira tela a ser exibida
         let tabbar = TabBarController.shared
+        
         window?.rootViewController = tabbar
         window?.makeKeyAndVisible()
         // AQUI

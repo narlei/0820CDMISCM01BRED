@@ -12,8 +12,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBOutlet weak var buttonAction: UIButton!
+    
+    @IBOutlet weak var buttonActionSheet: UIButton!
     
     @IBAction func openAlert() {
         let alert = UIAlertController(title: "Atenção",
@@ -35,23 +35,30 @@ class ViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
     }
-
+    
     @IBAction func openAlertInput() {
         let alert = UIAlertController(title: "TITULO",
                                       message: "MESSAGE",
                                       preferredStyle: .alert)
+        
+        
         alert.addTextField(configurationHandler: { textField in
             textField.placeholder = "placeholder"
+            textField.tag = 10
         })
+        
         let cancelButton = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         let addButton = UIAlertAction(title: "OK", style: .default) { _ in
-            let textField = alert.textFields?.first
+            if let textField = alert.textFields?.first, let text = textField.text {
+                print(text)
+            }
         }
+        
         alert.addAction(cancelButton)
         alert.addAction(addButton)
         present(alert, animated: true, completion: nil)
     }
-
+    
     @IBAction func openActionSheet() {
         
         
@@ -79,9 +86,19 @@ class ViewController: UIViewController {
             print("Nenhuma")
         }))
         
-        
-        
+        if let popoverController = alert.popoverPresentationController {
+          popoverController.sourceView = self.buttonActionSheet
+          popoverController.sourceRect = CGRect(x: self.buttonActionSheet.bounds.midX,
+                                                y: self.buttonActionSheet.bounds.midY,
+                                                width: 0,
+                                                height: 0)
+        }
+
         present(alert, animated: true, completion: nil)
         
+        // Operador Ternário
+        let verdadeiro = true
+        let x = verdadeiro == true ? "Sim" : "Não"
+        print(x)
     }
 }

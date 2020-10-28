@@ -49,6 +49,9 @@
                             <constraint firstItem="Hjd-Iv-Gpu" firstAttribute="top" secondItem="rR9-YM-paE" secondAttribute="bottom" constant="31" id="vP5-Ih-hjN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonActionSheet" destination="rR9-YM-paE" id="aKb-0r-LgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

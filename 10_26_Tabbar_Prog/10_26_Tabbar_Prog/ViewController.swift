@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let phone = Contact(title: "Abrir Telefone", url: "tel://")
         let message = Contact(title: "Abrir message", url: "message://")
         
-        open(contact: message) 
+        open(contact: message)
         
     }
     

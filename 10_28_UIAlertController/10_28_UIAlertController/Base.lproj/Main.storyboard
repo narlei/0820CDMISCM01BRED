@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_28_UIAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbs-gi-BX8">
+                                <rect key="frame" x="190.5" y="106" width="33" height="30"/>
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="openAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPK-6h-gNs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjd-Iv-Gpu">
+                                <rect key="frame" x="143" y="214" width="128" height="30"/>
+                                <state key="normal" title="Alert with Textfield"/>
+                                <connections>
+                                    <action selector="openAlertInput" destination="BYZ-38-t0r" eventType="touchUpInside" id="OuJ-8A-g38"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR9-YM-paE">
+                                <rect key="frame" x="165" y="153" width="84" height="30"/>
+                                <state key="normal" title="ActionSheet"/>
+                                <connections>
+                                    <action selector="openActionSheet" destination="BYZ-38-t0r" eventType="touchUpInside" id="afn-di-LUz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zbs-gi-BX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="Icf-gz-0Wf"/>
+                            <constraint firstItem="Zbs-gi-BX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="be6-Rv-m3h"/>
+                            <constraint firstItem="Hjd-Iv-Gpu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cCR-Fv-PjD"/>
+                            <constraint firstItem="rR9-YM-paE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fAr-ZC-fUk"/>
+                            <constraint firstItem="rR9-YM-paE" firstAttribute="top" secondItem="Zbs-gi-BX8" secondAttribute="bottom" constant="17" id="sLj-Dp-xn7"/>
+                            <constraint firstItem="Hjd-Iv-Gpu" firstAttribute="top" secondItem="rR9-YM-paE" secondAttribute="bottom" constant="31" id="vP5-Ih-hjN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -33,10 +33,10 @@ class ViewController: UIViewController {
 //    func loadData() {
 //        arrayOpen = [String]()
 //        arrayClose = [String]()
-//    
-//        
+//
+//
 //        var arrayFiltered = [String]()
-//        
+//
 //        if !searchBar.text.isEmpty() {
 //            arrayFiltered = arrayAll.filter({ (item) -> Bool in
 //                return item.contains("xcw")
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
 //        }else {
 //            arrayFiltered.append(contentsOf: arrayAll)
 //        }
-//        
+//
 //        for item in arrayFiltered {
 //            if item.isCompleted {
 //                arrayClose.append(item)
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
 //                arrayOpen.append(item)
 //            }
 //        }
-//        
+//
 //        tableView.reloadData()
 //    }
     

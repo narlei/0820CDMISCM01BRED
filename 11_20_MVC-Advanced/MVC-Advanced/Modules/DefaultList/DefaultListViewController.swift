@@ -28,7 +28,7 @@ class DefaultListViewController: UIViewController {
         }
     }
 
-    class func getView(controller: ControllerProtocol) -> DefaultListViewController {
+    static func getView(controller: ControllerProtocol) -> DefaultListViewController {
         let viewDefault = UIStoryboard(name: "DefaultList", bundle: nil).instantiateInitialViewController() as! DefaultListViewController
         viewDefault.controller = controller
         return viewDefault

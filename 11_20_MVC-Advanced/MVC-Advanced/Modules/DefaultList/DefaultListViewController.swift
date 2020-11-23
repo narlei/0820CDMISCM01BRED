@@ -51,7 +51,7 @@ extension DefaultListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.textLabel?.text = controller.getTitleForCell(at: indexPath.row)
-
+        cell.textLabel?.accessibilityIdentifier = "cell_\(indexPath.row)"
         return cell
     }
 }

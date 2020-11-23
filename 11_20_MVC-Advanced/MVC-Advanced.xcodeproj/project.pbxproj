@@ -25,7 +25,19 @@
 		9C1B59E625670595004F4E28 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B59E525670595004F4E28 /* ModelController.swift */; };
 		9C1B59EA25670805004F4E28 /* ModelYearController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B59E925670805004F4E28 /* ModelYearController.swift */; };
 		9C1B59EF25670936004F4E28 /* CarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1B59EE25670936004F4E28 /* CarController.swift */; };
+		9C8C8D11256BF06C00940AB9 /* MVC_AdvancedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C8D10256BF06C00940AB9 /* MVC_AdvancedUITests.swift */; };
+		9C8C8D1B256BF61800940AB9 /* BrandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C8D1A256BF61800940AB9 /* BrandTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C8C8D13256BF06C00940AB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1B599C2566FDFC004F4E28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1B59A32566FDFC004F4E28;
+			remoteInfo = "MVC-Advanced";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5E84D904E3A8806280A25EA8 /* Pods-MVC-Advanced.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC-Advanced.release.xcconfig"; path = "Target Support Files/Pods-MVC-Advanced/Pods-MVC-Advanced.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +61,10 @@
 		9C1B59E525670595004F4E28 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		9C1B59E925670805004F4E28 /* ModelYearController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelYearController.swift; sourceTree = "<group>"; };
 		9C1B59EE25670936004F4E28 /* CarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarController.swift; sourceTree = "<group>"; };
+		9C8C8D0E256BF06C00940AB9 /* MVC-AdvancedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC-AdvancedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8C8D10256BF06C00940AB9 /* MVC_AdvancedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC_AdvancedUITests.swift; sourceTree = "<group>"; };
+		9C8C8D12256BF06C00940AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8C8D1A256BF61800940AB9 /* BrandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTests.swift; sourceTree = "<group>"; };
 		D9EC5FBDD80A8AA10F0AE678 /* Pods-MVC-Advanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC-Advanced.debug.xcconfig"; path = "Target Support Files/Pods-MVC-Advanced/Pods-MVC-Advanced.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +74,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D3934B76DDFD0FEE123F22D /* Pods_MVC_Advanced.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8C8D0B256BF06C00940AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1B59A62566FDFC004F4E28 /* MVC-Advanced */,
+				9C8C8D0F256BF06C00940AB9 /* MVC-AdvancedUITests */,
 				9C1B59A52566FDFC004F4E28 /* Products */,
 				0D71F5DB6472386AC32DE4B5 /* Pods */,
 				11A5649AAD7FC56661BFF56E /* Frameworks */,
@@ -95,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				9C1B59A42566FDFC004F4E28 /* MVC-Advanced.app */,
+				9C8C8D0E256BF06C00940AB9 /* MVC-AdvancedUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +181,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9C8C8D0F256BF06C00940AB9 /* MVC-AdvancedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C8C8D10256BF06C00940AB9 /* MVC_AdvancedUITests.swift */,
+				9C8C8D12256BF06C00940AB9 /* Info.plist */,
+				9C8C8D1A256BF61800940AB9 /* BrandTests.swift */,
+			);
+			path = "MVC-AdvancedUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +213,24 @@
 			productReference = 9C1B59A42566FDFC004F4E28 /* MVC-Advanced.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9C8C8D0D256BF06C00940AB9 /* MVC-AdvancedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8C8D17256BF06C00940AB9 /* Build configuration list for PBXNativeTarget "MVC-AdvancedUITests" */;
+			buildPhases = (
+				9C8C8D0A256BF06C00940AB9 /* Sources */,
+				9C8C8D0B256BF06C00940AB9 /* Frameworks */,
+				9C8C8D0C256BF06C00940AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C8C8D14256BF06C00940AB9 /* PBXTargetDependency */,
+			);
+			name = "MVC-AdvancedUITests";
+			productName = "MVC-AdvancedUITests";
+			productReference = 9C8C8D0E256BF06C00940AB9 /* MVC-AdvancedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +242,10 @@
 				TargetAttributes = {
 					9C1B59A32566FDFC004F4E28 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					9C8C8D0D256BF06C00940AB9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 9C1B59A32566FDFC004F4E28;
 					};
 				};
 			};
@@ -206,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				9C1B59A32566FDFC004F4E28 /* MVC-Advanced */,
+				9C8C8D0D256BF06C00940AB9 /* MVC-AdvancedUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +276,13 @@
 				9C1B59B42566FE00004F4E28 /* LaunchScreen.storyboard in Resources */,
 				9C1B59B12566FE00004F4E28 /* Assets.xcassets in Resources */,
 				9C1B59AF2566FDFC004F4E28 /* DefaultList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8C8D0C256BF06C00940AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +352,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C8C8D0A256BF06C00940AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8C8D11256BF06C00940AB9 /* MVC_AdvancedUITests.swift in Sources */,
+				9C8C8D1B256BF61800940AB9 /* BrandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C8C8D14256BF06C00940AB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1B59A32566FDFC004F4E28 /* MVC-Advanced */;
+			targetProxy = 9C8C8D13256BF06C00940AB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9C1B59AD2566FDFC004F4E28 /* DefaultList.storyboard */ = {
@@ -465,6 +547,44 @@
 			};
 			name = Release;
 		};
+		9C8C8D15256BF06C00940AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = "MVC-AdvancedUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nam.MVC-AdvancedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MVC-Advanced";
+			};
+			name = Debug;
+		};
+		9C8C8D16256BF06C00940AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = "MVC-AdvancedUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nam.MVC-AdvancedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MVC-Advanced";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +602,15 @@
 			buildConfigurations = (
 				9C1B59B92566FE00004F4E28 /* Debug */,
 				9C1B59BA2566FE00004F4E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8C8D17256BF06C00940AB9 /* Build configuration list for PBXNativeTarget "MVC-AdvancedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8C8D15256BF06C00940AB9 /* Debug */,
+				9C8C8D16256BF06C00940AB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

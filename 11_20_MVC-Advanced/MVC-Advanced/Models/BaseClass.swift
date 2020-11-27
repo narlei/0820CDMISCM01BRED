@@ -25,17 +25,4 @@ class BaseClass: NSObject {
         }
     }
 
-    /**
-     * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
-     */
-    func toDictionary() -> [String: Any] {
-        var dictionary = [String: Any]()
-        if id != nil {
-            dictionary["codigo"] = id
-        }
-        if name != nil {
-            dictionary["nome"] = name
-        }
-        return dictionary
-    }
 }

@@ -38,12 +38,33 @@ class ViewController: UIViewController {
                 }
             }
         }
+        
+        loadData(filter: "Jess") { (array) in
+            print("Exibindo resultados do filtro")
+            if let array = array {
+                for person in array {
+                    print(person.name)
+                }
+            }
+        }
     }
 
     // Carregar a lista de person que já está salva
     func loadData(completion: ([Person]?) -> Void) {
         let context = persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        let result = try? context.fetch(request)
+        let arrayPerson = result as? [Person]
+        completion(arrayPerson)
+    }
+    
+    func loadData(filter: String, completion: ([Person]?) -> Void) {
+        let context = persistentContainer.viewContext
+        let predicate = NSPredicate(format: "name contains[c] %@", filter)
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        request.predicate = predicate
+        request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+
         let result = try? context.fetch(request)
         let arrayPerson = result as? [Person]
         completion(arrayPerson)

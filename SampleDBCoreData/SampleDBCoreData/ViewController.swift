@@ -60,9 +60,11 @@ class ViewController: UIViewController {
     
     func loadData(filter: String, completion: ([Person]?) -> Void) {
         let context = persistentContainer.viewContext
-        let predicate = NSPredicate(format: "name contains[c] %@", filter)
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        
+        let predicate = NSPredicate(format: "name contains[c] %@", filter)
         request.predicate = predicate
+        
         request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
 
         let result = try? context.fetch(request)

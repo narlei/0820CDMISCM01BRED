@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Passport" representedClassName=".Passport" syncable="YES" codeGenerationType="class">
+        <attribute name="number" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="passport" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName=".Person" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="passport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Passport" inverseName="person" inverseEntity="Passport"/>
+        <relationship name="vehicals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vehicals" inverseName="person" inverseEntity="Vehicals"/>
+    </entity>
+    <entity name="Vehicals" representedClassName=".Vehicals" syncable="YES" codeGenerationType="class">
+        <attribute name="modelName" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="vehicals" inverseEntity="Person"/>
+    </entity>
+    <elements>
+        <element name="Passport" positionX="11.3125" positionY="-26.20703125" width="128" height="73"/>
+        <element name="Person" positionX="-228.30078125" positionY="18.921875" width="128" height="74"/>
+        <element name="Vehicals" positionX="-407.41796875" positionY="-90.5625" width="128" height="73"/>
+    </elements>
+</model>

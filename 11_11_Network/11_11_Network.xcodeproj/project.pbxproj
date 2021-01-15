@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C81C90F25AC9E6100490B22 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81C90E25AC9E6100490B22 /* NotificationService.swift */; };
+		9C81C91325AC9E6100490B22 /* Notificacao.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9C81C90C25AC9E6100490B22 /* Notificacao.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9CA978F5255C0DE700233999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA978F4255C0DE700233999 /* AppDelegate.swift */; };
 		9CA978F7255C0DE700233999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA978F6255C0DE700233999 /* SceneDelegate.swift */; };
 		9CA978F9255C0DE700233999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA978F8255C0DE700233999 /* ViewController.swift */; };
@@ -16,8 +18,35 @@
 		A65540A98B72104FD308DAC7 /* Pods_11_11_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF301C14FE832C654259A89 /* Pods_11_11_Network.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C81C91125AC9E6100490B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA978E9255C0DE700233999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C81C90B25AC9E6100490B22;
+			remoteInfo = Notificacao;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C81C91425AC9E6100490B22 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9C81C91325AC9E6100490B22 /* Notificacao.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2AF301C14FE832C654259A89 /* Pods_11_11_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_11_11_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C81C90C25AC9E6100490B22 /* Notificacao.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notificacao.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C81C90E25AC9E6100490B22 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9C81C91025AC9E6100490B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA978F1255C0DE700233999 /* 11_11_Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 11_11_Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA978F4255C0DE700233999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA978F6255C0DE700233999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9C81C90925AC9E6100490B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA978EE255C0DE700233999 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,14 +92,23 @@
 				BCE2F20A3E01E12DA4B00A2C /* Pods-11_11_Network.debug.xcconfig */,
 				D332E37C667863F760A224CD /* Pods-11_11_Network.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C81C90D25AC9E6100490B22 /* Notificacao */ = {
+			isa = PBXGroup;
+			children = (
+				9C81C90E25AC9E6100490B22 /* NotificationService.swift */,
+				9C81C91025AC9E6100490B22 /* Info.plist */,
+			);
+			path = Notificacao;
 			sourceTree = "<group>";
 		};
 		9CA978E8255C0DE700233999 = {
 			isa = PBXGroup;
 			children = (
 				9CA978F3255C0DE700233999 /* 11_11_Network */,
+				9C81C90D25AC9E6100490B22 /* Notificacao */,
 				9CA978F2255C0DE700233999 /* Products */,
 				3EAC6C0B192FB6E638A43ABA /* Pods */,
 				3E16131CD33C7B8798389B30 /* Frameworks */,
@@ -74,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				9CA978F1255C0DE700233999 /* 11_11_Network.app */,
+				9C81C90C25AC9E6100490B22 /* Notificacao.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +141,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9C81C90B25AC9E6100490B22 /* Notificacao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C81C91725AC9E6100490B22 /* Build configuration list for PBXNativeTarget "Notificacao" */;
+			buildPhases = (
+				9C81C90825AC9E6100490B22 /* Sources */,
+				9C81C90925AC9E6100490B22 /* Frameworks */,
+				9C81C90A25AC9E6100490B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notificacao;
+			productName = Notificacao;
+			productReference = 9C81C90C25AC9E6100490B22 /* Notificacao.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9CA978F0255C0DE700233999 /* 11_11_Network */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA97905255C0DEA00233999 /* Build configuration list for PBXNativeTarget "11_11_Network" */;
@@ -104,10 +167,12 @@
 				9CA978EE255C0DE700233999 /* Frameworks */,
 				9CA978EF255C0DE700233999 /* Resources */,
 				2C98D2F84C13007324E80164 /* [CP] Embed Pods Frameworks */,
+				9C81C91425AC9E6100490B22 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9C81C91225AC9E6100490B22 /* PBXTargetDependency */,
 			);
 			name = 11_11_Network;
 			productName = 11_11_Network;
@@ -120,9 +185,12 @@
 		9CA978E9255C0DE700233999 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					9C81C90B25AC9E6100490B22 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					9CA978F0255C0DE700233999 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -142,11 +210,19 @@
 			projectRoot = "";
 			targets = (
 				9CA978F0255C0DE700233999 /* 11_11_Network */,
+				9C81C90B25AC9E6100490B22 /* Notificacao */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9C81C90A25AC9E6100490B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA978EF255C0DE700233999 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +278,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9C81C90825AC9E6100490B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C81C90F25AC9E6100490B22 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA978ED255C0DE700233999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +297,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C81C91225AC9E6100490B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C81C90B25AC9E6100490B22 /* Notificacao */;
+			targetProxy = 9C81C91125AC9E6100490B22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9CA978FA255C0DE700233999 /* Main.storyboard */ = {
@@ -234,6 +326,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9C81C91525AC9E6100490B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = Notificacao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nam.-1-11-Network.Notificacao";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C81C91625AC9E6100490B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HQKT5G7NHC;
+				INFOPLIST_FILE = Notificacao/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nam.-1-11-Network.Notificacao";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9CA97903255C0DEA00233999 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCE2F20A3E01E12DA4B00A2C /* Pods-11_11_Network.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D332E37C667863F760A224CD /* Pods-11_11_Network.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -393,6 +527,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9C81C91725AC9E6100490B22 /* Build configuration list for PBXNativeTarget "Notificacao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C81C91525AC9E6100490B22 /* Debug */,
+				9C81C91625AC9E6100490B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9CA978EC255C0DE700233999 /* Build configuration list for PBXProject "11_11_Network" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

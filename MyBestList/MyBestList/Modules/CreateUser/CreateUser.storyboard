@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oWR-9a-skq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create User View Controller-->
+        <scene sceneID="ciE-4N-gaM">
+            <objects>
+                <viewController id="oWR-9a-skq" customClass="CreateUserViewController" customModule="MyBestList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tkf-La-zo0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Criar nova conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTN-8X-I7R">
+                                <rect key="frame" x="128.5" y="64" width="157" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-3b-FYu">
+                                <rect key="frame" x="59" y="164" width="296" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0pr-xS-JUG">
+                                <rect key="frame" x="59" y="217" width="296" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme a senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVw-9Q-QI9">
+                                <rect key="frame" x="59" y="270" width="296" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fE-W2-esg">
+                                <rect key="frame" x="59" y="332" width="296" height="44"/>
+                                <color key="backgroundColor" red="0.035467151939999997" green="0.5540600712" blue="0.057361931599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ocs-iK-EBT"/>
+                                </constraints>
+                                <state key="normal" title="Criar conta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCreateAccount:" destination="oWR-9a-skq" eventType="touchUpInside" id="vwm-A7-wdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7m-H2-BmR">
+                                <rect key="frame" x="59" y="394" width="296" height="30"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionCancel:" destination="oWR-9a-skq" eventType="touchUpInside" id="vYE-IA-I74"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MD5-3j-EMR"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="MD5-3j-EMR" firstAttribute="trailing" secondItem="0pr-xS-JUG" secondAttribute="trailing" constant="59" id="1k5-ec-qQD"/>
+                            <constraint firstItem="MD5-3j-EMR" firstAttribute="trailing" secondItem="4fE-W2-esg" secondAttribute="trailing" constant="59" id="2dd-MJ-g6q"/>
+                            <constraint firstItem="Zuj-3b-FYu" firstAttribute="leading" secondItem="MD5-3j-EMR" secondAttribute="leading" constant="59" id="9Nf-Qs-7RI"/>
+                            <constraint firstItem="fTN-8X-I7R" firstAttribute="centerX" secondItem="tkf-La-zo0" secondAttribute="centerX" id="DAW-3F-Zit"/>
+                            <constraint firstItem="0pr-xS-JUG" firstAttribute="leading" secondItem="MD5-3j-EMR" secondAttribute="leading" constant="59" id="DIf-4d-wyj"/>
+                            <constraint firstItem="4fE-W2-esg" firstAttribute="leading" secondItem="MD5-3j-EMR" secondAttribute="leading" constant="59" id="DY1-ga-SF7"/>
+                            <constraint firstItem="MD5-3j-EMR" firstAttribute="trailing" secondItem="Zuj-3b-FYu" secondAttribute="trailing" constant="59" id="Dmw-K8-IUM"/>
+                            <constraint firstItem="MD5-3j-EMR" firstAttribute="trailing" secondItem="s7m-H2-BmR" secondAttribute="trailing" constant="59" id="Mdh-KU-0ur"/>
+                            <constraint firstItem="Zuj-3b-FYu" firstAttribute="top" secondItem="fTN-8X-I7R" secondAttribute="bottom" constant="74" id="Nzy-xV-O1r"/>
+                            <constraint firstItem="WVw-9Q-QI9" firstAttribute="top" secondItem="0pr-xS-JUG" secondAttribute="bottom" constant="19" id="V84-JS-jZc"/>
+                            <constraint firstItem="s7m-H2-BmR" firstAttribute="leading" secondItem="MD5-3j-EMR" secondAttribute="leading" constant="59" id="a1d-Ey-npo"/>
+                            <constraint firstItem="0pr-xS-JUG" firstAttribute="top" secondItem="Zuj-3b-FYu" secondAttribute="bottom" constant="19" id="hsq-nx-Pd2"/>
+                            <constraint firstItem="4fE-W2-esg" firstAttribute="top" secondItem="WVw-9Q-QI9" secondAttribute="bottom" constant="28" id="mf7-UD-IrA"/>
+                            <constraint firstItem="WVw-9Q-QI9" firstAttribute="leading" secondItem="MD5-3j-EMR" secondAttribute="leading" constant="59" id="nzi-hf-RtF"/>
+                            <constraint firstItem="s7m-H2-BmR" firstAttribute="top" secondItem="4fE-W2-esg" secondAttribute="bottom" constant="18" id="rMD-oP-Xsk"/>
+                            <constraint firstItem="MD5-3j-EMR" firstAttribute="trailing" secondItem="WVw-9Q-QI9" secondAttribute="trailing" constant="59" id="yoU-S1-c4e"/>
+                            <constraint firstItem="fTN-8X-I7R" firstAttribute="top" secondItem="MD5-3j-EMR" secondAttribute="top" constant="20" id="zDx-OI-VV0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldConfirmPassword" destination="WVw-9Q-QI9" id="MFx-yD-3B1"/>
+                        <outlet property="textFieldEmail" destination="Zuj-3b-FYu" id="YIJ-IZ-jbF"/>
+                        <outlet property="textFieldPassword" destination="0pr-xS-JUG" id="HMq-Qj-ZJF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQ7-Nc-7r0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.36231884057975" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

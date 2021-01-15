@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MJu-zL-2f6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ZJx-Uz-9j7">
+            <objects>
+                <viewController id="MJu-zL-2f6" customClass="LoginViewController" customModule="MyBestList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z5p-CR-7iZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6t-0b-Geo">
+                                <rect key="frame" x="68" y="207" width="277" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RDs-H2-wkL">
+                                <rect key="frame" x="68" y="249" width="277" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZz-38-QRR">
+                                <rect key="frame" x="68" y="311" width="277" height="44"/>
+                                <color key="backgroundColor" red="0.035467151939999997" green="0.5540600712" blue="0.057361931599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tWx-ng-Z0g"/>
+                                </constraints>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonLogin:" destination="MJu-zL-2f6" eventType="touchUpInside" id="ocS-pc-PRT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iit-Tb-8xh">
+                                <rect key="frame" x="68" y="374" width="277" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IFt-b9-I0h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Ainda não possui uma conta? Crie agora!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonCreateAccount:" destination="MJu-zL-2f6" eventType="touchUpInside" id="YO3-gk-HEO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_contextualised-lists" translatesAutoresizingMaskIntoConstraints="NO" id="Va4-8H-4gw">
+                                <rect key="frame" x="107" y="69" width="199" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="6L9-aj-P1Q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Btg-2d-mtZ"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="RDs-H2-wkL" firstAttribute="top" secondItem="A6t-0b-Geo" secondAttribute="bottom" constant="8" symbolic="YES" id="252-qC-Pf2"/>
+                            <constraint firstItem="Btg-2d-mtZ" firstAttribute="trailing" secondItem="RDs-H2-wkL" secondAttribute="trailing" constant="69" id="5I4-2Z-88y"/>
+                            <constraint firstItem="iit-Tb-8xh" firstAttribute="leading" secondItem="Btg-2d-mtZ" secondAttribute="leading" constant="68" id="71V-9i-68j"/>
+                            <constraint firstItem="Va4-8H-4gw" firstAttribute="leading" secondItem="Btg-2d-mtZ" secondAttribute="leading" constant="107" id="AS5-Iq-ePr"/>
+                            <constraint firstItem="Va4-8H-4gw" firstAttribute="top" secondItem="Btg-2d-mtZ" secondAttribute="top" constant="25" id="H8H-ap-Kow"/>
+                            <constraint firstItem="A6t-0b-Geo" firstAttribute="leading" secondItem="Btg-2d-mtZ" secondAttribute="leading" constant="68" id="RgQ-51-2VJ"/>
+                            <constraint firstItem="Btg-2d-mtZ" firstAttribute="trailing" secondItem="iit-Tb-8xh" secondAttribute="trailing" constant="69" id="Z7m-nt-bbU"/>
+                            <constraint firstItem="RDs-H2-wkL" firstAttribute="leading" secondItem="Btg-2d-mtZ" secondAttribute="leading" constant="68" id="dbv-QC-qet"/>
+                            <constraint firstItem="Btg-2d-mtZ" firstAttribute="trailing" secondItem="Va4-8H-4gw" secondAttribute="trailing" constant="108" id="doT-JZ-lWe"/>
+                            <constraint firstItem="SZz-38-QRR" firstAttribute="leading" secondItem="Btg-2d-mtZ" secondAttribute="leading" constant="68" id="emG-lS-uvh"/>
+                            <constraint firstItem="Btg-2d-mtZ" firstAttribute="trailing" secondItem="SZz-38-QRR" secondAttribute="trailing" constant="69" id="iWg-HY-Mtg"/>
+                            <constraint firstItem="A6t-0b-Geo" firstAttribute="top" secondItem="Btg-2d-mtZ" secondAttribute="top" constant="163" id="jn1-gT-mjg"/>
+                            <constraint firstItem="Btg-2d-mtZ" firstAttribute="trailing" secondItem="A6t-0b-Geo" secondAttribute="trailing" constant="69" id="oDK-eV-Fir"/>
+                            <constraint firstItem="SZz-38-QRR" firstAttribute="top" secondItem="RDs-H2-wkL" secondAttribute="bottom" constant="28" id="vwP-Vq-FNP"/>
+                            <constraint firstItem="iit-Tb-8xh" firstAttribute="top" secondItem="SZz-38-QRR" secondAttribute="bottom" constant="19" id="xdq-KO-SOL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="A6t-0b-Geo" id="mnu-XB-Tuo"/>
+                        <outlet property="textFieldPassword" destination="RDs-H2-wkL" id="jjb-Gk-ueV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ny4-yg-2Sp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.36231884057975" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rsz_contextualised-lists" width="267" height="267"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

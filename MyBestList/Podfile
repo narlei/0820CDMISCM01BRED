@@ -8,6 +8,7 @@ target 'MyBestList' do
 
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Database'
 
   # Pods for MyBestList
 
